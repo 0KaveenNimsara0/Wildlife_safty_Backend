@@ -1,51 +1,75 @@
+
 [
     {
+        "ClassName": "Common Indian Krait",
+        "Family": "Elapidae",
+        "ScientificName": "Bungarus caeruleus (Schneider, 1801)",
+        "CommonEnglishNames": "Common Indian Krait, Blue Krait",
+        "LocalNames": "Sinhala: තෙල් කරවැලා (Thel Karawala), මගමරුවා (Magamaruwa) | Tamil: Yennai Viriyan, Karuvula Pambu",
+        "EndemicStatus": "Not Endemic to Sri Lanka",
+        "Venom": "Highly Venomous (Potent Neurotoxin)",
+        "ConservationStatus": "Least Concern (LC)",
+        "Description": "A highly venomous nocturnal snake, often considered one of the 'Big Four' most dangerous snakes in the region. It has a glossy, bluish-black body with distinct, narrow white bands that may be faint or absent on the front part of its body. This species is typically found in a variety of habitats, including agricultural fields, scrub jungles, and even populated areas, especially near water sources. It is generally timid but is a primary cause of snakebite mortality, as bites often occur at night when people are sleeping on the floor or accidentally step on it.",
+        "Treatment": "IMMEDIATE HOSPITALIZATION IS REQUIRED. This is a life-threatening medical emergency. Antivenom is the primary and only effective treatment. Keep the patient calm and still to slow venom spread. Do NOT cut the wound or attempt to suck out venom."
+    },
+    {
         "ClassName": "Indian Cobra",
-        "ScientificName": "Naja naja",
-        "Venomous": "Highly Venomous (Neurotoxic)",
-        "Description": "Instantly recognizable by its hood, which it spreads when threatened. Cobras are found across India and Southeast Asia. Their venom affects the nervous system, leading to paralysis and respiratory failure.",
-        "ConservationStatus": "Least Concern, but protected in many regions due to human-wildlife conflict.",
-        "Treatment": "IMMEDIATE HOSPITALIZATION IS REQUIRED. Victim needs antivenom. Keep the victim calm and still. Immobilize the bitten limb with a splint. Do NOT apply a tourniquet, cut the wound, or attempt to suck out the venom."
+        "Family": "Elapidae",
+        "ScientificName": "Naja naja (Linnaeus, 1758)",
+        "CommonEnglishNames": "Indian Cobra, Spectacled Cobra",
+        "LocalNames": "Sinhala: නයා (Naya), නාගයා (Nagaya) | Tamil: Nalla Pambu",
+        "EndemicStatus": "Not Endemic to Sri Lanka",
+        "Venom": "Highly Venomous (Neurotoxic & Cardiotoxic)",
+        "ConservationStatus": "Least Concern (LC), but protected due to human-wildlife conflict.",
+        "Description": "An iconic and culturally significant snake, instantly recognizable by its impressive hood, which it spreads when threatened. The dorsal side of the hood often bears a distinctive spectacle mark. Cobras are adaptable and can be found in diverse habitats, from dense forests to agricultural lands and urban gardens. While they prefer to avoid confrontation, they will strike if provoked. Their potent venom is a complex mixture of neurotoxins and cardiotoxins, which can cause paralysis, respiratory failure, and cardiac arrest, making a bite a serious medical emergency.",
+        "Treatment": "IMMEDIATE HOSPITALIZATION IS REQUIRED. Victim needs antivenom urgently. Keep the victim calm and still. Immobilize the bitten limb with a splint. Do NOT apply a tourniquet or cut the wound."
     },
     {
         "ClassName": "Russell-s Viper",
-        "ScientificName": "Daboia russelii",
-        "Venomous": "Highly Venomous (Hemotoxic)",
-        "Description": "One of the 'Big Four' dangerous snakes in India, responsible for a significant number of bites. It has a triangular head and a stout body with a distinct chain-like pattern. Its venom causes severe pain, swelling, and blood clotting disorders.",
-        "ConservationStatus": "Least Concern.",
-        "Treatment": "IMMEDIATE HOSPITALIZATION IS REQUIRED. This is a medical emergency. Antivenom is the primary treatment. Keep the patient as still as possible to slow venom spread. Lightly bandage the wound, but do not restrict blood flow."
+        "Family": "Viperidae",
+        "ScientificName": "Daboia russelii (Shaw & Nodder, 1797)",
+        "CommonEnglishNames": "Russell's Viper, Chain Viper",
+        "LocalNames": "Sinhala: තිත් පොළඟා (Thith Polanga) | Tamil: Kannadi Viriyan",
+        "EndemicStatus": "Not Endemic to Sri Lanka",
+        "Venom": "Highly Venomous (Potent Hemotoxin)",
+        "ConservationStatus": "Least Concern (LC)",
+        "Description": "Responsible for causing the most snakebite deaths in Sri Lanka, this viper is dangerously venomous. It has a stout, thick body, a flattened triangular head, and a distinct pattern of three rows of dark brown, chain-like spots. Typically found in open, grassy areas and agricultural lands, it is an ambush predator that relies on its excellent camouflage. When threatened, it produces an incredibly loud hiss, often compared to a pressure cooker. Its potent hemotoxic venom causes extreme pain, severe swelling, blood clotting disorders, and is notorious for causing acute kidney failure.",
+        "Treatment": "IMMEDIATE HOSPITALIZATION IS REQUIRED. This is a critical medical emergency. Antivenom is the primary treatment. Keep the patient as still as possible to slow venom spread."
     },
     {
         "ClassName": "Python",
-        "ScientificName": "Python molurus",
-        "Venomous": "Non-Venomous",
-        "Description": "A large, non-venomous constrictor snake. It kills its prey by coiling around it and suffocating it. It has a distinctive pattern that provides excellent camouflage in forests and grasslands.",
-        "ConservationStatus": "Near Threatened due to habitat loss and the illegal skin trade.",
-        "Treatment": "Bites are not venomous but can cause significant tissue damage and infection. Clean the wound thoroughly with soap and water. Seek medical attention for a tetanus shot and to check for bacterial infection. Deep wounds may require stitches."
-    },
-    {
-        "ClassName": "Common Indian Krait",
-        "ScientificName": "Bungarus caeruleus",
-        "Venomous": "Highly Venomous (Neurotoxic)",
-        "Description": "A nocturnal snake, also one of the 'Big Four'. Its venom is extremely potent. Bites may have minimal local symptoms but can lead to severe systemic paralysis. It has a glossy black or bluish-black body with narrow white bands.",
-        "ConservationStatus": "Least Concern.",
-        "Treatment": "IMMEDIATE HOSPITALIZATION IS REQUIRED, EVEN IF SYMPTOMS ARE MINOR. Potentially fatal. Antivenom is critical. Pressure immobilization technique can be applied to the bitten limb while awaiting medical transport."
+        "Family": "Pythonidae",
+        "ScientificName": "Python molurus (Linnaeus, 1758)",
+        "CommonEnglishNames": "Indian Rock Python",
+        "LocalNames": "Sinhala: පිඹුරා (Pimbura) | Tamil: Periya Pambu, Malai Pambu",
+        "EndemicStatus": "Not Endemic to Sri Lanka",
+        "Venom": "Non-Venomous",
+        "ConservationStatus": "Near Threatened (NT)",
+        "Description": "A large, heavy-bodied non-venomous snake, the Indian Rock Python is a powerful constrictor. Its body is marked with a striking pattern of large, irregular blotches that provide excellent camouflage in its preferred habitats of grasslands, swamps, and rocky foothills. It is a slow-moving, nocturnal predator, killing its prey by seizing it and rapidly coiling around it, causing suffocation. While not venomous, a defensive bite from a large python can inflict severe deep lacerations due to its sharp, recurved teeth. These wounds require prompt medical attention to prevent bacterial infection.",
+        "Treatment": "Bites are not venomous but should be treated seriously to prevent infection. Thoroughly clean the wound with antiseptic soap and water. Seek medical attention for deep wounds, as stitches and a tetanus shot may be necessary."
     },
     {
         "ClassName": "Green Vine Snake",
-        "ScientificName": "Ahaetulla nasuta",
-        "Venomous": "Mildly Venomous",
-        "Description": "A slender, arboreal snake known for its bright green coloration and pointed snout. Its venom is mild and not considered dangerous to humans, causing only local swelling and pain.",
-        "ConservationStatus": "Least Concern.",
-        "Treatment": "Bite is not considered a medical emergency for humans. Clean the area with antiseptic. The symptoms like mild pain and swelling will typically subside within a few days. Monitor for any allergic reaction."
+        "Family": "Colubridae",
+        "ScientificName": "Ahaetulla nasuta (Lacépède, 1789)",
+        "CommonEnglishNames": "Green Vine Snake, Long-nosed Whip Snake",
+        "LocalNames": "Sinhala: ඇහැටුල්ලා (Ahaetulla) | Tamil: Pachai Pambu",
+        "EndemicStatus": "Not Endemic to Sri Lanka",
+        "Venom": "Mildly Venomous",
+        "ConservationStatus": "Least Concern (LC)",
+        "Description": "A remarkably slender, arboreal snake that is perfectly camouflaged among foliage. It is known for its vibrant green coloration, a long, pointed snout, and horizontal pupils that grant it excellent binocular vision for hunting lizards and frogs. This snake is diurnal and relies on its eyesight to locate prey. When threatened, it may inflate its neck to appear larger. It is rear-fanged and possesses a mild neurotoxic venom, which is not considered dangerous to humans. A bite typically results in only minor, localized swelling and pain that subsides without medical intervention.",
+        "Treatment": "Bite is not considered a medical emergency for humans. Clean the area with antiseptic. The mild pain and swelling will typically subside within a few days. Monitor for any allergic reaction, although this is rare."
     },
     {
         "ClassName": "Hump-nosed pit viper",
-        "ScientificName": "Hypnale hypnale",
-        "Venomous": "Venomous (Hemotoxic)",
-        "Description": "A small pit viper found in India and Sri Lanka. It is often found in leaf litter. Its bite can cause pain, swelling, blistering, and in some cases, kidney problems. It has a characteristic hump-like snout.",
-        "ConservationStatus": "Least Concern.",
+        "Family": "Viperidae",
+        "ScientificName": "Hypnale hypnale (Merrem, 1820)",
+        "CommonEnglishNames": "Hump-nosed Pit Viper, Merrem's Hump-nosed Viper",
+        "LocalNames": "Sinhala: පොළොන් තෙලිස්සා (Polon Thelissa), කුණකටුවා (Kunakatuwa) | Tamil: Kopi Viriyan",
+        "EndemicStatus": "Not Endemic to Sri Lanka",
+        "Venom": "Venomous (Hemotoxic)",
+        "ConservationStatus": "Least Concern (LC)",
+        "Description": "A common but medically significant pit viper found throughout Sri Lanka, often responsible for a high number of snakebites. It is a small, stout snake with brownish, mottled camouflage that blends perfectly with leaf litter on forest floors, plantations, and home gardens. Its most distinguishing feature is the upturned, hump-like tip of its snout. As a pit viper, it possesses heat-sensing pits to detect prey. Its venom is hemotoxic and can cause severe local pain, swelling, blistering, and in some cases, blood clotting issues and acute kidney injury, requiring prompt medical evaluation.",
         "Treatment": "MEDICAL ATTENTION IS REQUIRED. While not as deadly as a Russell's Viper, its venom can cause significant local tissue damage and potential renal complications. Antivenom may be required depending on the severity of symptoms."
     }
 ]
-

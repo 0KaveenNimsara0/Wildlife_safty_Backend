@@ -6,15 +6,21 @@ import tensorflow as tf
 import json
 import os
 import traceback
+import logging
 
 app = Flask(__name__)
 CORS(app)
 
+# Set up logging
+logging.basicConfig(level=logging.INFO)
+
 # --- Configuration ---
-# Reverted to using the TFLite model for more stable inference
-MODEL_PATH = 'snake_model.tflite' 
+MODEL_PATH = 'snake_model.tflite'
 LABELS_PATH = 'labels.txt'
 SNAKE_DATA_PATH = 'snake_data.json'
+# --- NEW: Set a confidence threshold (e.g., 50%) ---
+# If the model's confidence is below this, we'll consider it a wrong image.
+CONFIDENCE_THRESHOLD = 0.68
 
 # --- Load Resources ---
 interpreter = None
@@ -36,7 +42,7 @@ try:
 
     # Load class labels from the text file
     if os.path.exists(LABELS_PATH):
-        with open(LABELS_PATH, 'r') as f:
+        with open(LABELS_PATH, 'r', encoding='utf-8') as f:
             class_labels = [line.strip() for line in f.readlines()]
         print(f"✅ Class labels loaded successfully. Found {len(class_labels)} classes.")
     else:
@@ -44,11 +50,11 @@ try:
 
     # Load snake details and create a robust lookup map
     if os.path.exists(SNAKE_DATA_PATH):
-        with open(SNAKE_DATA_PATH, 'r') as f:
+        with open(SNAKE_DATA_PATH, 'r', encoding='utf-8') as f:
             snake_details_list = json.load(f)
             for item in snake_details_list:
                 # Clean key for robust matching
-                key = item['ClassName'].lower().strip().replace('-', ' ') 
+                key = item['ClassName'].lower().strip().replace('-', ' ')
                 snake_data_map[key] = item
         print("✅ Snake details JSON loaded and indexed successfully.")
     else:
@@ -101,30 +107,36 @@ def predict():
         predicted_index = np.argmax(prediction)
         confidence = float(prediction[predicted_index])
         predicted_class_name = class_labels[predicted_index]
-        print(f"[DEBUG] Step 6: Prediction result - Class: '{predicted_class_name}', Confidence: {confidence:.2f}")
+        print(f"[DEBUG] Prediction result - Class: '{predicted_class_name}', Confidence: {confidence:.2f}")
+
+        # --- NEW: Check if confidence is below the threshold ---
+        if confidence < CONFIDENCE_THRESHOLD:
+            print(f"❌ [ERROR] Low confidence ({confidence:.2f}). Rejecting prediction.")
+            error_message = f"Could not confidently identify a snake in this image (Confidence: {confidence:.2%}). This may be the wrong type of image. Please try a clearer picture."
+            return jsonify({'error': error_message}), 400
 
         lookup_key = predicted_class_name.lower().strip().replace('-', ' ')
         snake_details = snake_data_map.get(lookup_key)
-        print(f"[DEBUG] Step 7: Looking up details with key: '{lookup_key}'")
 
         if not snake_details:
             print(f"❌ [ERROR] Details not found for key: '{lookup_key}'")
             return jsonify({
-                'error': f"Prediction successful ('{predicted_class_name}'), but details not found in database. Check snake_data.json."
+                'error': f"Prediction successful ('{predicted_class_name}'), but details not found in database."
             }), 404
 
-        print("[DEBUG] Step 8: Details found. Preparing response.")
-        response_data = {
-            **snake_details,
-            'Confidence': f"{confidence:.2%}"
-        }
-        
+        response_data = {**snake_details, 'Confidence': f"{confidence:.2%}"}
         return jsonify(response_data)
 
     except Exception as e:
         print(f"❌ [ERROR] An unexpected error occurred during prediction.")
-        traceback.print_exc() 
-        return jsonify({'error': f'An internal server error occurred. Check the server console for details.'}), 500
+        traceback.print_exc()
+        return jsonify({'error': 'An internal server error occurred. Check the server console for details.'}), 500
+
+@app.route('/welcome', methods=['GET'])
+def welcome():
+    """Returns a welcome message and logs the request."""
+    app.logger.info(f"Request received: {request.method} {request.path}")
+    return jsonify({"message": "Welcome to the Wildlife Safety API!"})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
