@@ -1,0 +1,51 @@
+[
+    {
+        "ClassName": "Indian Cobra",
+        "ScientificName": "Naja naja",
+        "Venomous": "Highly Venomous (Neurotoxic)",
+        "Description": "Instantly recognizable by its hood, which it spreads when threatened. Cobras are found across India and Southeast Asia. Their venom affects the nervous system, leading to paralysis and respiratory failure.",
+        "ConservationStatus": "Least Concern, but protected in many regions due to human-wildlife conflict.",
+        "Treatment": "IMMEDIATE HOSPITALIZATION IS REQUIRED. Victim needs antivenom. Keep the victim calm and still. Immobilize the bitten limb with a splint. Do NOT apply a tourniquet, cut the wound, or attempt to suck out the venom."
+    },
+    {
+        "ClassName": "Russell-s Viper",
+        "ScientificName": "Daboia russelii",
+        "Venomous": "Highly Venomous (Hemotoxic)",
+        "Description": "One of the 'Big Four' dangerous snakes in India, responsible for a significant number of bites. It has a triangular head and a stout body with a distinct chain-like pattern. Its venom causes severe pain, swelling, and blood clotting disorders.",
+        "ConservationStatus": "Least Concern.",
+        "Treatment": "IMMEDIATE HOSPITALIZATION IS REQUIRED. This is a medical emergency. Antivenom is the primary treatment. Keep the patient as still as possible to slow venom spread. Lightly bandage the wound, but do not restrict blood flow."
+    },
+    {
+        "ClassName": "Python",
+        "ScientificName": "Python molurus",
+        "Venomous": "Non-Venomous",
+        "Description": "A large, non-venomous constrictor snake. It kills its prey by coiling around it and suffocating it. It has a distinctive pattern that provides excellent camouflage in forests and grasslands.",
+        "ConservationStatus": "Near Threatened due to habitat loss and the illegal skin trade.",
+        "Treatment": "Bites are not venomous but can cause significant tissue damage and infection. Clean the wound thoroughly with soap and water. Seek medical attention for a tetanus shot and to check for bacterial infection. Deep wounds may require stitches."
+    },
+    {
+        "ClassName": "Common Indian Krait",
+        "ScientificName": "Bungarus caeruleus",
+        "Venomous": "Highly Venomous (Neurotoxic)",
+        "Description": "A nocturnal snake, also one of the 'Big Four'. Its venom is extremely potent. Bites may have minimal local symptoms but can lead to severe systemic paralysis. It has a glossy black or bluish-black body with narrow white bands.",
+        "ConservationStatus": "Least Concern.",
+        "Treatment": "IMMEDIATE HOSPITALIZATION IS REQUIRED, EVEN IF SYMPTOMS ARE MINOR. Potentially fatal. Antivenom is critical. Pressure immobilization technique can be applied to the bitten limb while awaiting medical transport."
+    },
+    {
+        "ClassName": "Green Vine Snake",
+        "ScientificName": "Ahaetulla nasuta",
+        "Venomous": "Mildly Venomous",
+        "Description": "A slender, arboreal snake known for its bright green coloration and pointed snout. Its venom is mild and not considered dangerous to humans, causing only local swelling and pain.",
+        "ConservationStatus": "Least Concern.",
+        "Treatment": "Bite is not considered a medical emergency for humans. Clean the area with antiseptic. The symptoms like mild pain and swelling will typically subside within a few days. Monitor for any allergic reaction."
+    },
+    {
+        "ClassName": "Hump-nosed pit viper",
+        "ScientificName": "Hypnale hypnale",
+        "Venomous": "Venomous (Hemotoxic)",
+        "Description": "A small pit viper found in India and Sri Lanka. It is often found in leaf litter. Its bite can cause pain, swelling, blistering, and in some cases, kidney problems. It has a characteristic hump-like snout.",
+        "ConservationStatus": "Least Concern.",
+        "Treatment": "MEDICAL ATTENTION IS REQUIRED. While not as deadly as a Russell's Viper, its venom can cause significant local tissue damage and potential renal complications. Antivenom may be required depending on the severity of symptoms."
+    }
+]
+
