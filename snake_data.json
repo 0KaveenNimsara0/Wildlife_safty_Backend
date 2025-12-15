@@ -71,5 +71,17 @@
         "ConservationStatus": "Least Concern (LC)",
         "Description": "A common but medically significant pit viper found throughout Sri Lanka, often responsible for a high number of snakebites. It is a small, stout snake with brownish, mottled camouflage that blends perfectly with leaf litter on forest floors, plantations, and home gardens. Its most distinguishing feature is the upturned, hump-like tip of its snout. As a pit viper, it possesses heat-sensing pits to detect prey. Its venom is hemotoxic and can cause severe local pain, swelling, blistering, and in some cases, blood clotting issues and acute kidney injury, requiring prompt medical evaluation.",
         "Treatment": "MEDICAL ATTENTION IS REQUIRED. While not as deadly as a Russell's Viper, its venom can cause significant local tissue damage and potential renal complications. Antivenom may be required depending on the severity of symptoms."
+    },
+    {
+        "ClassName": "Not_Snake",
+        "Family": " ",
+        "ScientificName": " ",
+        "CommonEnglishNames": " ",
+        "LocalNames": " ",
+        "EndemicStatus": " ",
+        "Venom": " ",
+        "ConservationStatus": " ",
+        "Description": " ",
+        "Treatment": " "
     }
 ]
