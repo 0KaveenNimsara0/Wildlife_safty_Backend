@@ -57,14 +57,14 @@ class PredictionService:
                     f"Could not confidently identify a snake in this image "
                     f"(Confidence: {confidence:.2%}). Please try a clearer picture of the snake."
                 )
-                print(f"❌ [ERROR] Low confidence: {error_message}")
+                print(f"[ERROR] Low confidence: {error_message}")
                 return None, error_message, 400
 
             # Step 6: Look up snake details
             snake_details = self.snake_data_repo.find_by_name(predicted_class_name)
 
             if not snake_details:
-                print(f"⚠️ [WARNING] Details not found for: '{predicted_class_name}'. Using fallback data.")
+                print(f"[WARN] Details not found for: '{predicted_class_name}'. Using fallback data.")
                 snake_details = self._create_fallback(predicted_class_name, confidence)
 
             # Step 7: Build response
@@ -74,7 +74,7 @@ class PredictionService:
             return response_data, None, 200
 
         except Exception as e:
-            print(f"❌ [ERROR] An unexpected error occurred during prediction:")
+            print(f"[ERROR] An unexpected error occurred during prediction:")
             import traceback
             traceback.print_exc()
             return None, 'An internal server error occurred. Please try again later.', 500

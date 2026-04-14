@@ -18,12 +18,12 @@ class LabelRepository:
             if os.path.exists(LABELS_PATH):
                 with open(LABELS_PATH, 'r', encoding='utf-8') as f:
                     self.class_labels = [line.strip() for line in f.readlines()]
-                print(f"✅ Class labels loaded successfully. Found {len(self.class_labels)} classes.")
+                print(f"[OK] Class labels loaded successfully. Found {len(self.class_labels)} classes.")
                 print(f"Classes: {self.class_labels}")
             else:
                 raise FileNotFoundError(f"Labels file not found at {LABELS_PATH}")
         except Exception as e:
-            print(f"❌ Error loading labels: {e}")
+            print(f"[ERROR] Error loading labels: {e}")
             traceback.print_exc()
             self.class_labels = []
 

@@ -20,9 +20,9 @@ class ModelRepository:
             if os.path.exists(MODEL_PATH):
                 try:
                     self.model = load_model(MODEL_PATH, compile=False)
-                    print(f"✅ Keras model loaded successfully from {MODEL_PATH}.")
+                    print(f"[OK] Keras model loaded successfully from {MODEL_PATH}.")
                 except Exception as e:
-                    print(f"⚠️  Standard load failed, trying with custom objects: {e}")
+                    print(f"[WARN] Standard load failed, trying with custom objects: {e}")
                     self.model = load_model(
                         MODEL_PATH,
                         compile=False,
@@ -31,11 +31,11 @@ class ModelRepository:
                             'Adam': tf.keras.optimizers.Adam
                         }
                     )
-                    print(f"✅ Keras model loaded with custom objects from {MODEL_PATH}.")
+                    print(f"[OK] Keras model loaded with custom objects from {MODEL_PATH}.")
             else:
                 raise FileNotFoundError(f"Model file not found at {MODEL_PATH}")
         except Exception as e:
-            print(f"❌ Error loading model: {e}")
+            print(f"[ERROR] Error loading model: {e}")
             traceback.print_exc()
             self.model = None
 

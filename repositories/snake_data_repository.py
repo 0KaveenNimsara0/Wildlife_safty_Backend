@@ -40,12 +40,12 @@ class SnakeDataRepository:
                                 common_key = common_name.strip().lower()
                                 self.snake_data_map[common_key] = item
 
-                print(f"✅ Snake details JSON loaded successfully. Found {len(snake_details_list)} species.")
+                print(f"[OK] Snake details JSON loaded successfully. Found {len(snake_details_list)} species.")
                 print(f"Available species: {[item['ClassName'] for item in snake_details_list]}")
             else:
-                print(f"⚠️  Snake data file not found at {SNAKE_DATA_PATH}")
+                print(f"[WARN] Snake data file not found at {SNAKE_DATA_PATH}")
         except Exception as e:
-            print(f"❌ Error loading snake data: {e}")
+            print(f"[ERROR] Error loading snake data: {e}")
             traceback.print_exc()
 
     def find_by_name(self, predicted_class_name):
